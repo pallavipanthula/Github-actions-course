@@ -1,7 +1,17 @@
+name: my workflow
+
 on: push
+
 jobs:
-   my-first-job:
-   runs-on: windows-latest
-   steps:
-    -run: node --version
-    -run: npm --version
+  my-first-job:
+    runs-on: windows-latest
+    steps:
+      - name: "SAY HI"
+        run: |
+          echo "HI"
+          echo "This is Pallavi"
+      - name: "say good bye"
+        run: echo "Goodbye"
+
+
+      

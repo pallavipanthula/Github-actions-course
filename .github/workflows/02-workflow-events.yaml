@@ -1,0 +1,10 @@
+name: 02- workfows-events
+
+on: push
+
+jobs:
+  echo:
+    runs-on: windows-latest
+    steps:
+      - name: "Show the Trigger"
+        run: echo "This workflow was triggered by a push event"
