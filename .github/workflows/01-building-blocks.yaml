@@ -1,0 +1,32 @@
+name: Hello Good-bye Workflow
+
+on:
+  # Trigger the workflow when pushing changes to the main branch
+  push:
+    workfow_dispatch:
+
+jobs:
+  echo-hello
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Say hello
+        runs: echo "Hello-world"
+  echo-goodbye
+    runs-on: ubuntu-latest
+    steps:
+      - name: Initial step(TO fail)
+        run: |
+        echo "I will fail"
+        exit 1
+      - name: Say Good Bye
+        run: echo "Goodbye!"
+        
+       
+
+
+
+
+
+
+
